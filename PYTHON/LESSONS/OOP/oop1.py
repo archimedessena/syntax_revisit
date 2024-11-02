@@ -1,3 +1,4 @@
+# OOP of television remote control
 class Television:
     def __init__(self, brand, size, resolution, power_status=False, volume=10, channel=1):
         self.brand = brand
@@ -6,8 +7,8 @@ class Television:
         self.power_status = power_status
         self.volume = volume
         self.channel = channel
-
     def power_on(self):
+
         if not self.power_status:
             self.power_status = True
             print("The TV is now ON.")

@@ -17,7 +17,8 @@
 # print(even_number())
 
 
-# def quadratic_equation(a, b, c):
+#def quadratic_equation(a, b, c):
+
 
 
 # my_list = [2, 3, 4, 5, 6, "food", "drink", "drugs", "pants", 5, 6, 6]
