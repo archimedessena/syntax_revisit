@@ -1,3 +1,7 @@
+# while loop: while something is true, keep repeating otherwise stop 
+# for loop: for every item inside something, do something with the current iteration item 
+
+
 # def brush_up():
 #   a = int(input('Enter: '))
 #   b = int(input('Enter: '))

@@ -15,7 +15,8 @@
 # A Property and Method must be linked to an object to work
 
 
-
+# Delving deeper into class 
+# Name of the class- constructor(self(keyword-unlock)-methods-properties
 
 
 
