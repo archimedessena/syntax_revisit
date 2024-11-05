@@ -1,5 +1,4 @@
 # Creating a function to draw different shapes with different colors
-
 from turtle import * 
 
 pencil = Turtle()

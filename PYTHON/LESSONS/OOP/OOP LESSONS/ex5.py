@@ -3,6 +3,7 @@
 from random import randint
 from turtle import * 
 
+
 draw = Turtle()
 
 for i in range(4):
