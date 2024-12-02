@@ -33,6 +33,10 @@ class Travel:
             self.price += cost
             costs.append(cost)
             cost = int(input("Enter another cost:"))
+        
+        advice = self.advice(self.price)
+        inspect = self.list_inspect(costs)
+        return advice, inspect 
             
     def advice(self, number):
         if number < 500:
@@ -42,6 +46,26 @@ class Travel:
         else:
             print("Luxury trip.")
 
+    def list_inspect(self, costs):
+        less_than_ten = 0 
+        for i in costs:
+            if i >= 10:
+                less_than_ten += 1
+                
+        if less_than_ten <= 10:
+            self.price += 100
+            print(f"Updated price: {self.price}")
+
+
+location = input("Enter a country: ").capitalize()
+trip_type = input("Leisure or Business: ").capitalize()
+month = input("Enter a month: ") 
+
+
+test = Travel(location, month, trip_type)
+
+
+test.trip_info()
 
 
 
@@ -79,22 +103,4 @@ class Travel:
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+iiiii
