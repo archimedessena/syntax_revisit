@@ -67,7 +67,8 @@ test = Travel(location, month, trip_type)
 
 test.trip_info()
 
-
+flight_cost = int(input("Enter a flight cost:"))
+test.calc_cost(flight_cost)
 
 
 
