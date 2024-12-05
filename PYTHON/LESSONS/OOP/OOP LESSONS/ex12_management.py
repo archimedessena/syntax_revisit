@@ -23,13 +23,13 @@ class Guest:
 
     def guest_info(self, all_guests):
         for guest in all_guests:
-            print(self.first_name, self.last_name, "Age:",  self.age)
+            print(guest.first_name, guest.last_name, "Age:",  guest.age)
             
     def loyalty_program(self, all_guests):
         #1. create a list of any guest who meets certain conditions 
         #2.  for every guest in my list, add their last name to the list 
         #3. This condition must be met in order to be added to the list 
-        gold_members = [self.last_name for guest in all_guests if self.rank >= 10]
+        gold_members = [guest.last_name for guest in all_guests if guest.rank >= 10]
         if gold_members:
             print ("Gold members")
             for member in gold_members:
@@ -38,7 +38,7 @@ class Guest:
     def guest_avg(self, all_guests):
         total_age = 0 
         for guest in all_guests:
-            total_age += self.age 
+            total_age += guest.age 
         avg_age = total_age / len(all_guests)
         print("Average customer age: ", avg_age)
         
@@ -48,7 +48,7 @@ class Guest:
 all_guests = list()
 num_guests = int(input("Enter a number of guests: "))        
 for i in range(num_guests):
-    data = input("First Name/Last Name/Rank/Age: ")       
+    data = input("First Name/Last Name/Rank/Age: ").split("/")       
     guest = Guest(data[0], data[1], int(data[2]), int(data[3])) 
     all_guests.append(guest)
         
