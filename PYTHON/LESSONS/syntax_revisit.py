@@ -221,7 +221,7 @@ def spam(dividedBy):
 def only_name():
     s = input("Enter your name: ")
     if not s.isalpha():
-        print("It should not be number")
+        print("It should not be number.")
         only_name()
     else:
         print(s)
