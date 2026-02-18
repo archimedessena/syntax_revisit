@@ -1,10 +1,6 @@
-def name_guess():
-    name = input("What is my name?:")
-    name1 = "Archimedes"
-    if name == name1: 
-        print("That is my name,", name )
-    else: 
-        print("My name is {} not {}".format(name1, name))
-        
-        
-name_guess()
+def is_leap_year(year):
+    """Check if the given year is a leap year."""
+    return year % 4 == 0 and (year % 100 != 0 or year % 400 == 0)
+
+
+print(is_leap_year(2024))

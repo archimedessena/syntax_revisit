@@ -2,10 +2,13 @@
 
 class Education:
     
-    def __init__(self, curriculum, training, exams):
+    def __init__(self, curriculum, training, exams, teachers, students, training_materials):
         self.training = training
         self.curriculum = curriculum
-        self.exams = exams        
+        self.exams = exams  
+        self.teachers = teachers
+        self.students = students
+        self.training_materials = training_materials      
         
         
     def institution(self):
@@ -25,6 +28,7 @@ class Education:
             print("Not pampered")
 
 
+  
 
         
         
